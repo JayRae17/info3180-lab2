@@ -7,6 +7,7 @@ This file creates your application.
 
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+import datetime
 
 
 ###
@@ -23,6 +24,21 @@ def home():
 def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
+
+
+@app.route('/profile')
+def profile():
+    """Render the website's profile page."""
+    return render_template('profile.html', name="Jada-Rae Brown", usrname="jayboogs", address="Kingston, Jamaica", abt = "A 20 year old student in her final year of university. She enjoys web design and binge watching Netflix shows. She hopes that by the end of her univeristy experience she will be able to find a good job and have a meaningful career", date_join = format_date_joined(2019,2,8), posts = 50, fwl = 508, fwlrs = 1049)
+
+###
+# The functions added for lab
+###
+
+def format_date_joined(year,month,day):
+    date_joined = datetime.date(year, month, day) # a specific date 
+    fdate = date_joined.strftime("%B, %Y") 
+    return fdate
 
 
 ###

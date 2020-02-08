@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class = "full">
+    <div class = "head" id = "rectangle">
+        <img src="{{ url_for('static', filename='css/icon.png') }}" height="170" width="180">
+        <h1>{{name}}</h1>
+        <p>@{{usrname}}</p>
+        <p>{{address}}</p>
+        <p>Joined {{date_join}}</p>
+    </div>
+
+    <div class = "base" id = "rectangle2">
+        <p class = "about">{{abt}} </p> 
+        <table>
+            <tr>
+              <th>{{posts}}</th>
+              <th>{{fwl}}</th> 
+              <th>{{fwlrs}}</th>
+            </tr>
+            <tr>
+              <td>Posts</td>
+              <td>Following</td>
+              <td>Followers</td>
+            </tr>
+        </table>
+
+        <div class = "space">
+
+        </div>
+        <div class = "button">
+            Follow
+        </div>
+    </div>
+
+    
+</div>
+{% endblock %}

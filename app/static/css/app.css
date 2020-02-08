@@ -1,3 +1,107 @@
 body {
     padding-top: 5rem;
 }
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.head{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    line-height: 80%;
+}
+  
+  img {
+    filter: drop-shadow(2px 4px 2px #908DF9);
+    background: white;
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius:50%;
+    display:inline-block;
+    padding:10px;
+}
+
+#rectangle {
+    padding-top:25px;
+    padding-bottom: 10px;
+    border-top-left-radius:3%;
+    border-top-right-radius: 3%;
+    color: white;
+    text-shadow: 2px 2px #7774d9;
+    width: 50%;
+    height: 25%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgb(185,183,255);
+    background: radial-gradient(circle, rgba(185,183,255,1) 0%, rgba(149,146,255,1) 27%, rgba(119,116,217,1) 77%);
+  }
+
+.about{
+    margin-bottom: 25px;
+    text-align: justify;
+}
+  .base{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+  
+#rectangle2 {
+    padding-top:15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 35px;
+    width: 50%;
+    height: 25%;
+    color: #868686;
+    text-align: center;
+    background-color:white;
+    border-bottom-left-radius:3%;
+    border-bottom-right-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .space{
+      margin-top: 30px;
+  }
+
+  .button {
+    background-color: #5373ff;
+    border-radius: 6px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 35%;
+    margin-top: 40px;
+    display: block;
+    margin: auto;
+    
+  }
+  
+  table{
+    margin-left:auto; 
+    margin-right:auto;
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+
+th{
+    font-size: 18px;
+    color: #404045;
+} 
